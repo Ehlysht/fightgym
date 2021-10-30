@@ -1,0 +1,7 @@
+<svg id="facebook" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+  <g id="Rectangle_10903" data-name="Rectangle 10903" fill="#69bce2" stroke="#1e1e1e" stroke-width="1.5" opacity="0">
+    <rect width="33" height="33" stroke="none"/>
+    <rect x="0.75" y="0.75" width="31.5" height="31.5" fill="none"/>
+  </g>
+  <path id="facebook-2" data-name="facebook" d="M15.119,24.893V15.618H12V11.987h3.115V9.315c0-3.1,1.892-4.785,4.656-4.785a25.62,25.62,0,0,1,2.793.143V7.911H20.662c-1.5,0-1.795.715-1.795,1.763v2.312h3.6l-.468,3.631H18.867v9.276Z" transform="translate(-1.073 1.555)" fill="#fff"/>
+</svg>
