@@ -165,3 +165,71 @@ input::-webkit-inner-spin-button {
 .times{
     padding: 213px 0 230px;
 }
+.times__title{
+    margin-bottom: 60px;
+}
+.times__week{
+    width: 8%;
+    border-radius: 4px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.times__desc, .times__desc span{
+    width: 25%;
+    border-radius: 4px;
+    font-size: 22px;
+}
+.times__desc-second{
+    width: 32.5%;
+    border-radius: 4px;
+    font-weight: 300;
+}
+.times__title-day, .times__title-time{
+    background: #E1A121;
+    padding: 12px 0 11px 12px;
+    margin: 0 15px 12px 0;
+    font-weight: bold;
+    color: #1D1D1D;
+}
+.times__content-day, .times__content-time{
+    background: #3B3B3B;
+    padding: 36px 0 37px 12px;
+    margin: 0 15px 12px 0;
+}
+.times__content-day{
+    color: #141414;
+    background: #fff;
+    font-weight: bold;
+}
+.times__group .text-end{
+    padding-right: 15px;
+}
+.times__week{
+    padding-left: 0;
+}
+.times__empty{
+    background: rgba(59, 59, 59, 0.3)
+}
+.times__kids{
+    color: #289666;
+    font-weight: bold;
+}
+.times__weekend{
+    background: #1D1D1D;
+    color: #fff;
+}
+.times__content-weekend{
+    border: 2px solid #E1A121;
+    color: #fff;
+    font-weight: bold;
+}
+.times__content-weekend span{
+    color: #E1A121;
+    font-weight: bold;
+}
+
+/* Gallery */
+
+.gallery__title{
+    margin-bottom: 60px;
+}
