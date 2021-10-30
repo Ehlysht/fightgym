@@ -1,0 +1,167 @@
+/* ***Specification*** */
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 19px;
+	box-sizing: border-box;
+    letter-spacing: 0.02em;
+    line-height: 1.2em;
+    font-weight: 300;
+    color: #fff;
+}
+body{
+    background: #1D1D1D;
+}
+a, a:hover{
+	text-decoration: none;
+	color: inherit;
+    letter-spacing: 0.02em;
+}
+ul, li, p, h1, h2, h3, h4, h5, h6{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    letter-spacing: 0.02em;
+}
+input{
+	outline: none;
+}
+button{
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.btn{
+    width: 212px;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 12px 0;
+    background-color: #E1A121;
+    color: #fff;
+    font-weight: 400;
+}
+.sub__title, .sub__title span{
+    font-size: 100px;
+    font-weight: 800;
+}
+.sub__title span{
+    color: #E1A121;
+}
+/* Header */
+
+.header{
+    position: fixed;
+    width: 100%;
+    padding: 24px  130px;
+    background: rgba(35, 35, 35, .1);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+}
+.nav__item{
+    margin-right: 40px;
+}
+.nav__link{
+    color: #F2F2F2;
+    font-size: 16px;
+}
+.prices{
+    color: #E1A121;
+    font-size: 16px;
+    width: 164px;
+    padding: 8px 0;
+    border: 1px solid #E1A121;
+    border-radius: 4px;
+}
+
+
+/* Main */
+
+.main{
+    padding: 276px 0 195px;
+    background: url("/img/big-image.png")center center/cover ;
+}
+.main__title, .main__title span{
+    font-size: 74px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0em;
+}
+.main__title span{
+    color: #E1A121;
+}
+.main__text{
+    font-size: 18px;
+    color: #E2E2E2;
+    margin: 16px 0 43px;
+}
+
+/* About */
+
+.about{
+    padding: 30px 0 230px;
+}
+.about__title{
+    margin: 108px 0 -110px;
+}
+.about__info{
+    margin-top: 120px;
+}
+.about__text, .about__text span{
+    width: 97%;
+    font-size: 22px;
+    color: #E2E2E2;
+}
+.about__text span{
+    font-weight: 500;
+    color: #E1A121;
+}
+.about__img{
+    width: 480px;
+    height: 480px;
+}
+
+/* Team */
+
+.team__title{
+    margin-bottom: 60px;
+}
+.team__block{
+    padding: 80px 60px 60px;
+    border-radius: 4px;
+    background: #141414;
+}
+.team__img{
+    width: 285px;
+    height: 285px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+.team__name{
+    font-size: 30px;
+    color: #E1A121;
+    margin-bottom: 20px;
+}
+.team__position{
+    font-size: 22px;
+}
+.team__btn{
+    margin-top: 60px;
+    width: 170px;
+    padding: 9px 0;
+}
+
+/* Times */
+
+.times{
+    padding: 213px 0 230px;
+}
