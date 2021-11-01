@@ -24,8 +24,9 @@ ul, li, p, h1, h2, h3, h4, h5, h6{
 	padding: 0;
     letter-spacing: 0.02em;
 }
-input{
+input textarea, input:focus textarea:focus, input:focus-visible textarea:focus-visible, input:active textarea:active, input:target textarea:target{
 	outline: none;
+    border: none;
 }
 button{
 	padding: 0;
@@ -48,6 +49,18 @@ input::-webkit-inner-spin-button {
     background-color: #E1A121;
     color: #fff;
     font-weight: 400;
+    transition: all 0.2s ease; 
+}
+.btn:hover{
+    color: #fff;
+    outline: 2px solid #E1A121;
+    transform: translateY(-5px);
+    outline-offset: 5px;
+    border-radius: 4px;
+}
+.gallery__btn:hover, .team__btn:hover{
+    outline-offset: 0px;
+    outline: 1px solid #fcc14c;
 }
 .sub__title, .sub__title span{
     font-size: 100px;
@@ -59,6 +72,7 @@ input::-webkit-inner-spin-button {
 /* Header */
 
 .header{
+    z-index: 1;
     position: fixed;
     width: 100%;
     padding: 24px  130px;
@@ -139,12 +153,24 @@ input::-webkit-inner-spin-button {
     padding: 80px 60px 60px;
     border-radius: 4px;
     background: #141414;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.team__block:hover .team__img{
+    transform: scale(1.02);
+}
+.team__block:hover{
+    background-color: #080808;
+}
+.team__block:hover .team__name{
+    text-decoration: underline;
 }
 .team__img{
     width: 285px;
     height: 285px;
     border-radius: 50%;
     margin-bottom: 40px;
+    transition: all 0.2s ease;
 }
 .team__name{
     font-size: 30px;
@@ -160,6 +186,53 @@ input::-webkit-inner-spin-button {
     padding: 9px 0;
 }
 
+/* TeamPage */
+.teamPage{
+    padding: 274px 0 317px ;
+}
+.teamPage__title{
+    margin-bottom: 30px;
+}
+.teamPage__info{
+    margin-bottom: 300px;
+}
+.teamPage__name{
+    font-size: 34px;
+    color: #E1A121;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.teamPage__desc{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    width: 98%;
+}
+.teamPage__image{
+    position: relative;
+}
+.teamPage__img{
+    width: 466px;
+    height: 466px;
+    border-radius: 50%;
+}
+.teamPage__img-first{
+    margin-top: -130px;
+}
+.teamPage__position{
+    width: 256px;
+    padding: 11px 30px;
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    background: #fff;
+    color: #1D1D1D;
+    font-size: 20px;
+    font-weight: 500;
+}
+.teamPage__position-second{
+    left: 0;
+}
 /* Times */
 
 .times{
@@ -258,6 +331,39 @@ input::-webkit-inner-spin-button {
     margin-top: 60px;
 }
 
+/* Gallery Page */
+.galleryPage{
+    padding: 274px 0 350px;
+}
+.galleryPage__title{
+    margin-bottom: 100px;
+}
+.galleryPage__img{
+    width: 100%;
+    height: 300px;
+}
+.galleryPage__item{
+    position: relative;
+    margin-bottom: 15px;
+    margin-left: -15px;
+    opacity: 0.8;
+    transition: all 0.5s ease;
+}
+.galleryPage__item:hover, .galleryPage__item:hover .galleryPage__zoom{
+    opacity: 1;
+}
+.galleryPage__img{
+    width: 100%;
+    height: 300px;
+}
+.galleryPage__zoom{
+    position: absolute;
+    top: 41%;
+    right: 50%;
+    transition: all 0.5s ease;
+    opacity: 0;
+    cursor: pointer;
+}
 /* Price */
 
 .price{
@@ -361,7 +467,6 @@ input::-webkit-inner-spin-button {
     font-size: 16px;
     text-transform: uppercase;
 }
-
 .footer{
     background: rgba(0, 0, 0, 0.9);
     padding: 65px 0 59px;
@@ -391,6 +496,13 @@ input::-webkit-inner-spin-button {
     border: none;
     border-radius: 4px;
     margin-bottom: 16px;
+    border: 1.5px solid rgba(0, 0, 0, 0);
+}
+.footer__input:focus, .footer__input:focus-visible, .footer__input:active textarea:active, .footer__input:target{
+	outline: none;
+}
+.footer__input:hover{
+    border: 1.5px solid #F2F2F230;
 }
 .footer__input-textarea{
     height: 140px;
@@ -411,4 +523,9 @@ input::-webkit-inner-spin-button {
 .footer__maps{
     width: 100%;
     height: 320px;
+}
+.footer__btn:hover, .prices:hover{
+    color: #E1A121;
+    border: 2px solid;
+    font-weight: 600;
 }

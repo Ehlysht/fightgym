@@ -23,28 +23,28 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-4">
-                    <a href="#" class="logo"><img src="img/logo.png" alt="Logo" class="logo__img"></a>
+                    <a href="index.html" class="logo" id="home"><img src="img/logo.png" alt="Logo" class="logo__img"></a>
                 </div>
                 <div class="col-6 align-items-center d-flex justify-content-end">
                     <nav class="nav" id="nav">
                         <ul class="nav__list d-flex">
                             <li class="nav__item">
-                                <a href="" class="nav__link">
+                                <a href="#" class="nav__link toHome" id="about">
                                     About Us
                                 </a>
                             </li>
                             <li class="nav__item">
-                                <a href="" class="nav__link">
+                                <a href="#" class="nav__link toPage" id="teamPage">
                                     Our Team
                                 </a>
                             </li>
                             <li class="nav__item">
-                                <a href="" class="nav__link">
+                                <a href="#" class="nav__link toHome" id="times">
                                     Training Times
                                 </a>
                             </li>
                             <li class="nav__item">
-                                <a href="" class="nav__link">
+                                <a href="#" class="nav__link toPage" id="galleryPage">
                                     Gallery
                                 </a>
                             </li>
@@ -52,7 +52,7 @@
                     </nav>
                 </div>
                 <div class="col-2 align-items-center d-flex text-center">
-                    <a href="#" class="prices">
+                    <a href="#" class="prices toHome" id="price">
                         Prices
                     </a>
                 </div>
@@ -76,7 +76,7 @@
                     </p>
                 </div>
                 <div class="col-12">
-                    <button class="btn main__btn">
+                    <button class="btn main__btn toHome" id="times">
                         Training Times
                     </button>
                 </div>
@@ -136,7 +136,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-12 col-md-4">
-                    <div class="team__block">
+                    <div class="team__block toPage" id="teamPage">
                         <img src="img/box-img.jpg" alt="Team photo" class="team__img">
                         <h3 class="team__name">
                             Steffen Georgi
@@ -147,7 +147,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="team__block">
+                    <div class="team__block toPage" id="teamPage">
                         <img src="img/box-img.jpg" alt="Team photo" class="team__img">
                         <h3 class="team__name">
                             Massimo Maniglia
@@ -158,7 +158,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="team__block">
+                    <div class="team__block toPage" id="teamPage">
                         <img src="img/box-img.jpg" alt="Team photo" class="team__img">
                         <h3 class="team__name">
                             Jan Leitz
@@ -171,9 +171,82 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <button class="btn team__btn">
+                    <button class="btn team__btn toPage" id="teamPage">
                         More <img src="img/arrow.svg" alt="send" class="team__btn-img">
                     </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="teamPage d-none" id="teamPage">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="sub__title teamPage__title">
+                        Our <span>Team</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7 order-1">
+                    <div class="teamPage__info">
+                        <h3 class="teamPage__name">
+                            Steffen Georgi
+                        </h3>
+                        <p class="teamPage__desc">
+                            Joined the Boxclub Dübendorf in 2007 as Co-Coach and is Co-Founder of the ProFight Gym. He is president and headcoach of both clubs and covers the areas amateur/professional and fitness boxing, kickboxing/ K1 as well as functional/fitness/cardio and strength instead of strenth training.<br class="d-none d-md-block"><br class="d-none d-md-block">As headcoach he can look back on several worldchampions in the pro-section and big successes in the amateur section.<br class="d-none d-md-block"><br class="d-none d-md-block">2012 Fitnesscoach/trainer Swissboxing<br class="d-none d-md-block"> 2016 Coaching licence C competitive sport boxing<br class="d-none d-md-block"> More: Formation as Functionaltrainer and basic course fascia<br class="d-none d-md-block">Currently: Formation as fitness and cardiocoach at SAFS
+                        </p>
+                    </div>
+                </div>
+                <div class="col-5 order-2">
+                    <div class="teamPage__info">
+                        <div class="teamPage__image text-end">
+                            <img src="img/box-img.jpg" alt="Team photo" class="teamPage__img teamPage__img-first">
+                            <p class="teamPage__position text-center">
+                                President and Headcoach
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-7 order-2">
+                    <div class="teamPage__info">
+                        <h3 class="teamPage__name">
+                            Massimo Maniglia
+                        </h3>
+                        <p class="teamPage__desc">
+                            Joined the Boxclub Dübendorf in 2009 when his life as a boxer started in the small boxing room of the Boxclub. Quickly fascinated by this demanding sport he became a successful amateur fighter with a boxing record of 20 and 0.<br class="d-none d-md-block"><br class="d-none d-md-block">He wanted the best for himself from the many years in different gyms under various coaches and all the different sparring partners and will now start his coaching career in the summer of 2021.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-5 order-1">
+                    <div class="teamPage__info">
+                        <div class="teamPage__image text-start">
+                            <img src="img/box-img.jpg" alt="Team photo" class="teamPage__img">
+                            <p class="teamPage__position teamPage__position-second text-center">
+                                Coach and Content Creator
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7 order-1">
+                    <h3 class="teamPage__name">
+                        Jan Leitz
+                    </h3>
+                    <p class="teamPage__desc">
+                        Joined the Boxclub Dübendorf in 2011 and is Co-Founder of the ProFight Gym. He is vizepresident of both clubs and Legal Counsel of the ProFight Gym.
+                    </p>
+                </div>
+                <div class="col-5 order-2">
+                    <div class="teamPage__image text-end">
+                        <img src="img/box-img.jpg" alt="Team photo" class="teamPage__img">
+                        <p class="teamPage__position text-center">
+                            Vizepresident and Legal Counsel
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -328,51 +401,118 @@
         <div class="gallerty__slick">
             <div class="gallery__item">
                 <img src="img/box-img.jpg" alt="Image" class="gallery__img">
-                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom">
+                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom imgOpen" data-img="img/box-img.jpg">
             </div>
             <div class="gallery__item">
                 <img src="img/box-img.jpg" alt="Image" class="gallery__img">
-                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom">
+                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom imgOpen" data-img="img/box-img.jpg">
             </div>
             <div class="gallery__item">
                 <img src="img/box-img.jpg" alt="Image" class="gallery__img">
-                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom">
+                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom imgOpen" data-img="img/box-img.jpg">
             </div>
             <div class="gallery__item">
                 <img src="img/box-img.jpg" alt="Image" class="gallery__img">
-                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom">
+                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom imgOpen" data-img="img/box-img.jpg">
             </div>
             <div class="gallery__item">
                 <img src="img/box-img.jpg" alt="Image" class="gallery__img">
-                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom">
+                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom imgOpen" data-img="img/box-img.jpg">
             </div>
             <div class="gallery__item">
                 <img src="img/box-img.jpg" alt="Image" class="gallery__img">
-                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom">
+                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom imgOpen" data-img="img/box-img.jpg">
             </div>
             <div class="gallery__item">
                 <img src="img/box-img.jpg" alt="Image" class="gallery__img">
-                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom">
+                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom imgOpen" data-img="img/box-img.jpg">
             </div>
             <div class="gallery__item">
                 <img src="img/box-img.jpg" alt="Image" class="gallery__img">
-                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom">
+                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom imgOpen" data-img="img/box-img.jpg">
             </div>
             <div class="gallery__item">
                 <img src="img/box-img.jpg" alt="Image" class="gallery__img">
-                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom">
+                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom imgOpen" data-img="img/box-img.jpg">
             </div>
             <div class="gallery__item">
                 <img src="img/box-img.jpg" alt="Image" class="gallery__img">
-                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom">
+                <img src="img/zoom.svg" alt="Zoom" class="gallery__zoom imgOpen" data-img="img/box-img.jpg">
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <button class="btn gallery__btn">
+                    <button class="btn gallery__btn toPage" id="galleryPage">
                         More <img src="img/arrow.svg" alt="send" class="gallery__btn-img">
                     </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="galleryPage d-none" id="galleryPage">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="sub__title galleryPage__title">
+                        <span>Gallery</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="galleryPage__item">
+                        <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
+                        <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="galleryPage__item">
+                        <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
+                        <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="galleryPage__item">
+                        <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
+                        <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="galleryPage__item">
+                        <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
+                        <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="galleryPage__item">
+                        <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
+                        <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="galleryPage__item">
+                        <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
+                        <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="galleryPage__item">
+                        <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
+                        <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="galleryPage__item">
+                        <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
+                        <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="galleryPage__item">
+                        <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
+                        <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
+                    </div>
                 </div>
             </div>
         </div>
