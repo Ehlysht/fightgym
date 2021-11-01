@@ -4,10 +4,30 @@ $(document).ready(function() {
         slidesToScroll: 3,
         rows: 2,
         centerPadding: '240px',
-		infinite: true,
+		    infinite: true,
         arrows: false,
         dots: false,
         centerMode: true,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            }
+          },
+          {
+            breakpoint: 1008,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: "unslick"
+          }
+        ]
     });
     $('.imgOpen').addClass('img-enlargeable').click(function() {
         var src = $(this).attr('data-img');
@@ -65,5 +85,20 @@ $(document).ready(function() {
         $('.galleryPage').removeClass('d-block').addClass('d-none');
         $('.teamPage').removeClass('d-block').addClass('d-none');
         $("html, body").animate({ scrollTop: $("." + toSection).offset().top }, 500);
+    });
+    // Open/close burger menu
+    $('.burger, .nav__link, .prices').click(function(){
+      var changeMenu = $(this).attr('id');
+      if(changeMenu == 'open'){
+        $('.prices').removeClass('d-none').addClass('d-inline-block');
+        $('.nav__list').removeClass('d-none').addClass('d-flex');
+        $('.menu-open').removeClass('d-inline-block').addClass('d-none');
+        $('.menu-close').removeClass('d-none').addClass('d-inline-block');
+      }else{
+        $('.prices').removeClass('d-inline-block').addClass('d-none');
+        $('.nav__list').removeClass('d-flex').addClass('d-none');
+        $('.menu-open').removeClass('d-none').addClass('d-inline-block');
+        $('.menu-close').removeClass('d-inline-block').addClass('d-none');
+      }
     });
 });

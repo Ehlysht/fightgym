@@ -80,12 +80,21 @@ input::-webkit-inner-spin-button {
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
 }
+.logo__img{
+    width: 100%;
+    max-width: 245px;
+}
 .nav__item{
     margin-right: 40px;
 }
 .nav__link{
     color: #F2F2F2;
     font-size: 16px;
+}
+.nav__link:hover{
+    color: #E1A121;
+    text-decoration: underline;
+    font-weight: 500;
 }
 .prices{
     color: #E1A121;
@@ -96,21 +105,20 @@ input::-webkit-inner-spin-button {
     border-radius: 4px;
 }
 
-
 /* Main */
 
 .main{
     padding: 276px 0 195px;
     background: url("/img/big-image.png")center center/cover ;
 }
-.main__title, .main__title span{
+.main__title, .main__title-color, .main__title span{
     font-size: 74px;
     font-weight: 800;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0em;
 }
-.main__title span{
+.main__title .main__title-color{
     color: #E1A121;
 }
 .main__text{
@@ -140,8 +148,10 @@ input::-webkit-inner-spin-button {
     color: #E1A121;
 }
 .about__img{
-    width: 480px;
-    height: 480px;
+    width: 100%;
+    height: 100%;
+    max-width: 480px;
+    max-height: 480px;
 }
 
 /* Team */
@@ -150,7 +160,7 @@ input::-webkit-inner-spin-button {
     margin-bottom: 60px;
 }
 .team__block{
-    padding: 80px 60px 60px;
+    padding: 80px 40px 60px;
     border-radius: 4px;
     background: #141414;
     transition: all 0.2s ease;
@@ -166,11 +176,13 @@ input::-webkit-inner-spin-button {
     text-decoration: underline;
 }
 .team__img{
-    width: 285px;
-    height: 285px;
+    max-width: 285px;
+    max-height: 285px;
     border-radius: 50%;
     margin-bottom: 40px;
     transition: all 0.2s ease;
+    width: 100%;
+    height: auto;
 }
 .team__name{
     font-size: 30px;
@@ -528,4 +540,357 @@ input::-webkit-inner-spin-button {
     color: #E1A121;
     border: 2px solid;
     font-weight: 600;
+}
+.footer__social{
+    margin-top: -60px;
+}
+.footer__social-icon img:hover{
+    filter: invert(27%) sepia(22%) saturate(4427%) hue-rotate(342deg) brightness(92%) contrast(91%);
+}
+
+/* Media query */
+
+@media (max-width: 1400px){
+    .price__values{
+        right: 15%;
+    }
+}
+@media (max-width: 1200px){
+    .price__values{
+        right: 8%;
+    }
+    .nav__item{
+        margin-right: 20px;
+    }
+    .teamPage, .galleryPage {
+        padding: 130px 0 ;
+    }
+    .teamPage__title{
+        text-align: center;
+    }
+    .teamPage__info{
+        margin-bottom: 100px;
+    }
+    .teamPage__img-first{
+        margin-top: 0;
+    }
+    .teamPage__img{
+        max-width: 466px;
+        max-height: 466px;
+        width: 100%;
+        height: auto;
+    }
+    .footer__social{
+        margin-top: -40px;
+    }
+}
+@media (max-width: 992px){
+    
+    .header{
+        padding: 24px 50px;
+    }
+    .nav__item{
+        margin-bottom: 10px;
+    }
+    .nav__list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main{
+        background: url(/img/big-image.png)80% center/cover;
+    }
+    .sub__title, .sub__title span{
+        margin: 40px 0;
+        text-align: center;
+    }
+    .main__title, .main__title-color, .main__title span{
+        font-size: 65px;
+    }
+    .main__text{
+        font-size: 17px;
+    }
+    .about__img{
+        width: 100%;
+        height: auto;
+        max-width: 480px;
+        max-height: 480px;
+    }
+    .team__block{
+        padding: 30px 10px;
+    }
+    .team__img{
+        width: 100%;
+        height: auto;
+    }
+    .price__subtitle{
+        font-size: 25px;
+    }
+    .price__values{
+        right: 15%;
+    }
+    .price__item{
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    .times__desc, .times__desc span{
+        font-size: 17px;
+    }
+    .footer__logo{
+        margin: 40px 0;
+    }
+    .footer__form, .footer__maps {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 768px){
+    
+    .about{
+        padding: 30px 0 130px;
+    }
+    .sub__title, .sub__title span{
+        margin: 40px 0;
+        text-align: center;
+    }
+    .about__info{
+        margin-top: 0;
+    }
+    .about__img{
+        margin-bottom: 20px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .about__text{
+        margin-bottom: 80px;
+    }
+    .team__block{
+        padding: 20px;
+    }
+    .team__name{
+        font-size: 22px;
+    }
+    .team__position{
+        font-size: 18px;
+    }
+    .times__content-day, .times__content-time{
+        padding: 20px 0 20px 12px;
+    }
+    .times__desc, .times__desc span, .times__week{
+        font-size: 16px;
+    }
+    .times__kids, .times__week{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .times__week{
+        padding-left: 8px;
+    }
+    .price__values{
+        right: 15%;
+    }
+    .footer__title, .footer__title span{
+        font-size: 39px;
+    }
+    .footer__text, .footer__email{
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px) {
+    .header{
+        padding: 15px 0;
+        background: #151515;
+        backdrop-filter: blur(0);
+        -webkit-backdrop-filter: blur(0px);
+    }
+    .logo__img{
+        max-width: 320px;
+    }
+    .burger{
+        margin-right: 25px;
+    }
+    .nav__list{
+        margin-top: 80px;
+    }
+    .nav__item{
+        margin-bottom: 40px;
+    }
+    .nav__link{
+        font-weight: 500;
+    }
+    .prices{
+        background: #E1A121;
+        font-weight: 500;
+        color: #151515;
+        margin-bottom: 80px;
+        padding: 12px 0;
+        margin-right: 0;
+    }
+    .main{
+        padding: 224px 0 177px;
+        background: url(../img/big-image-m.png);
+    }
+    .main__title, .main__title-color, .main__title span{
+        font-size: 31px;
+        text-align: center;
+    }
+    .main__text{
+        font-size: 17px;
+        text-align: center;
+        margin: 30px 0 178px;
+    }
+    .sub__title, .sub__title span{
+        font-size: 37px;
+    }
+    .about{
+        padding: 130px 0 0;
+    }
+    .about__text, .about__text span{
+        font-size: 17px;
+    }
+    .team__block{
+        margin-bottom: 30px;
+    }
+    .team__img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .team__name{
+        font-size: 24px;
+    }
+    .team__position{
+        font-size: 17px;
+    }
+    .teamPage__info{
+        margin-bottom: 0;
+    }
+    .teamPage__name{
+        text-align: center;
+    }
+    .teamPage__img{
+        margin-bottom: 30px;
+    }
+    .teamPage__name{
+        margin-bottom: 30px;
+    }
+    .teamPage__position{
+        width: 35%;
+        padding: 0;
+        position: static;
+        background: none;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 400;
+        margin: 0 auto 30px;
+    }
+    .teamPage__desc{
+        color: #E2E2E2;
+        font-size: 17px;
+        margin-bottom: 96px;
+    }
+    .times__desc, .times__desc span, .times__week{
+        font-size: 17px;
+    }
+    .times__desc span{
+        font-weight: 600;
+        color: #E1A121;
+        display: block;
+        margin: 0 auto 16px;
+    }
+    .times__week, .times__desc{
+        width: auto;
+    }
+    .times__kids, .times__week{
+        display: block;
+    }
+    .times__content-day, .times__content-time{
+        padding: 22px 0;
+    }
+    .times__weekend{
+        background: #1D1D1D;
+    }
+    .gallerty__slick{
+        padding-left: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gallery__item{
+        width: 48%;
+        padding-right: 15px;
+    }
+    .price__item{
+        width: 100%;
+        background: #343434;
+        height: auto;
+        margin: 0 10px 24px;
+        padding: 30px 0;
+    }
+    .price__subtitle{
+        background: none;
+        font-size: 30px;
+        color: #fff;
+        padding: 0 0 87px 0;
+    }
+    .price__item-one .price__values, .price__item-two .price__values, .price__item-three .price__values, .price__item-four .price__values, .price__item-five .price__values{
+        outline: none;
+    }
+    .price__item-one .price__values p{
+        color: #E1A121;
+    }
+    .price__item-two .price__values p{
+        color: #E16921;
+    }
+    .price__item-three .price__values p{
+        color: #289666;
+    }
+    .price__item-four .price__values p{
+        color: #289692;
+    }
+    .price__item-five .price__values p{
+        color: #8B9291;
+    }
+    .price__values{
+        position: static;
+        outline-offset: 0;
+        border-radius: none;
+        height: auto;
+        width: auto;
+        background: none;
+        border: none;
+    }
+    .price__figure{
+        font-size: 38px;
+        color: #E1A121;
+    }
+    .price__currency{
+        font-size: 16px;
+        color: #E1A121;
+    }
+    .price__desc{
+        font-size: 17px;
+    }
+    .footer{
+        padding: 0px 0 60px;
+    }
+    .footer__text{
+        font-size: 18px;
+    }
+    .footer__text-info{
+        margin-bottom: 60px;
+    }
+    .footer__social{
+        margin-top: 60px;
+    }
+}
+@media (max-width: 480px) {
+    .gallerty__slick{
+        padding-left: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gallery__item{
+        width: 48%;
+        padding-right: 15px;
+    }
 }

@@ -22,12 +22,16 @@
     <header class="header" id="header">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-4">
+                <div class="col-xxl-4 col-lg-3 col-md-4 col-8">
                     <a href="index.html" class="logo" id="home"><img src="img/logo.png" alt="Logo" class="logo__img"></a>
                 </div>
-                <div class="col-6 align-items-center d-flex justify-content-end">
+                <div class="col-4 d-flex d-md-none align-items-center justify-content-end">
+                    <img src="img/menu.svg" alt="MenuOpen" class="d-inline-block d-md-none burger menu-open" id="open">
+                    <img src="img/close.svg" alt="MenuOpen" class="d-none d-md-none burger menu-close" id="close">
+                </div>
+                <div class="col-xxl-6 col-lg-7 col-md-5 col-12 align-items-center d-flex justify-content-lg-end justify-content-center">
                     <nav class="nav" id="nav">
-                        <ul class="nav__list d-flex">
+                        <ul class="nav__list d-none d-md-flex">
                             <li class="nav__item">
                                 <a href="#" class="nav__link toHome" id="about">
                                     About Us
@@ -51,8 +55,8 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-2 align-items-center d-flex text-center">
-                    <a href="#" class="prices toHome" id="price">
+                <div class="col-lg-2 col-md-3 col-12 align-items-center d-flex justify-content-center justify-content-md-start text-center">
+                    <a href="#" class="prices d-none d-md-inline-block toHome" id="price">
                         Prices
                     </a>
                 </div>
@@ -64,18 +68,18 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="main__title">
-                        <span>
-                            Hands up ▪
+                        <span class="main__title-color">
+                            Hands up <br class="d-md-none"><span class="d-none d-md-block main__title-color">▪</span>
                         </span>
-                        chin down ▪ <br class="d-none d-md-block">eyes on the prize
+                        chin down <br class="d-md-none"><span class="d-none d-md-block">▪ </span><br class="d-none d-md-block">eyes on the prize
                     </h1>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-xxl-4">
                     <p class="main__text">
                         ProFight Gym - where you learn to train hard, fight hard, get fit and love it!
                     </p>
                 </div>
-                <div class="col-12">
+                <div class="col-12 text-center text-md-start">
                     <button class="btn main__btn toHome" id="times">
                         Training Times
                     </button>
@@ -86,29 +90,29 @@
     <section class="about" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center d-none d-md-inline-block">
                     <img src="img/mouse.png" alt="Mouse" class="about__mouse">
                 </div>
             </div>
             <div class="row">
-                <div class="col-5">
+                <div class="col-12">
                     <h2 class="sub__title about__title">
                         About <span>Us</span>
                     </h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-7 d-flex align-items-center order-1">
+                <div class="col-12 col-md-7 text-md-center text-lg-start col-lg-7 d-flex align-items-center order-md-1 order-2">
                     <p class="about__text">
                         <span>The Boxclub </span>Dübendorf was founded in the year 2003 and is existing ever since. From the Boxclub the ProFight Gym emerged in March 2013 which offered a part of amatuer boxing also professional boxing as well as kickboxing/K1.
                     </p>
                 </div>
-                <div class="col-5 order-2">
+                <div class="col-12 col-md-5 order-md-2 order-1 text-center text-lg-start">
                     <img src="img/box-img.jpg" alt="Box Image" class="about__img">
                 </div>
             </div>
             <div class="row">
-                <div class="col-7 d-flex align-items-center order-2">
+                <div class="col-12 col-md-7 text-md-center text-lg-start col-lg-7 d-flex align-items-center order-2">
                     <div class="about__info">
                         <p class="about__text">
                             <span>After an unlucky </span>re-organisation 2019/2020 the two clubs started new as per summer 2021. Under the label ProFight Gym the doors of the gym re-opened in a new location with immense experience and new swag.
@@ -117,7 +121,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-5 order-1">
+                <div class="col-12 col-md-5 order-1 text-center text-lg-start">
                     <div class="about__info">
                         <img src="img/box-img.jpg" alt="Box Image" class="about__img">
                     </div>
@@ -170,7 +174,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 text-center text-md-start">
                     <button class="btn team__btn toPage" id="teamPage">
                         More <img src="img/arrow.svg" alt="send" class="team__btn-img">
                     </button>
@@ -187,22 +191,25 @@
                     </h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-7 order-1">
+            <div class="row align-items-center align-items-md-start">
+                <div class="col-12 col-lg-7 order-2 order-lg-1">
                     <div class="teamPage__info">
                         <h3 class="teamPage__name">
                             Steffen Georgi
                         </h3>
+                        <p class="d-md-none teamPage__position text-center">
+                            President and Headcoach
+                        </p>
                         <p class="teamPage__desc">
-                            Joined the Boxclub Dübendorf in 2007 as Co-Coach and is Co-Founder of the ProFight Gym. He is president and headcoach of both clubs and covers the areas amateur/professional and fitness boxing, kickboxing/ K1 as well as functional/fitness/cardio and strength instead of strenth training.<br class="d-none d-md-block"><br class="d-none d-md-block">As headcoach he can look back on several worldchampions in the pro-section and big successes in the amateur section.<br class="d-none d-md-block"><br class="d-none d-md-block">2012 Fitnesscoach/trainer Swissboxing<br class="d-none d-md-block"> 2016 Coaching licence C competitive sport boxing<br class="d-none d-md-block"> More: Formation as Functionaltrainer and basic course fascia<br class="d-none d-md-block">Currently: Formation as fitness and cardiocoach at SAFS
+                            Joined the Boxclub Dübendorf in 2007 as Co-Coach and is Co-Founder of the ProFight Gym. He is president and headcoach of both clubs and covers the areas amateur/professional and fitness boxing, kickboxing/ K1 as well as functional/fitness/cardio and strength instead of strenth training.<br><br>As headcoach he can look back on several worldchampions in the pro-section and big successes in the amateur section.<br><br>2012 Fitnesscoach/trainer Swissboxing<br> 2016 Coaching licence C competitive sport boxing<br> More: Formation as Functionaltrainer and basic course fascia<br>Currently: Formation as fitness and cardiocoach at SAFS
                         </p>
                     </div>
                 </div>
-                <div class="col-5 order-2">
+                <div class="col-12 col-lg-5 order-1 order-lg-2">
                     <div class="teamPage__info">
-                        <div class="teamPage__image text-end">
+                        <div class="teamPage__image text-center text-lg-end">
                             <img src="img/box-img.jpg" alt="Team photo" class="teamPage__img teamPage__img-first">
-                            <p class="teamPage__position text-center">
+                            <p class="d-none d-md-inline-block teamPage__position text-center">
                                 President and Headcoach
                             </p>
                         </div>
@@ -210,40 +217,46 @@
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-7 order-2">
+                <div class="col-12 col-lg-7 order-2">
                     <div class="teamPage__info">
                         <h3 class="teamPage__name">
                             Massimo Maniglia
                         </h3>
+                        <p class="d-md-none teamPage__position text-center">
+                            Coach and Content Creator
+                        </p>
                         <p class="teamPage__desc">
-                            Joined the Boxclub Dübendorf in 2009 when his life as a boxer started in the small boxing room of the Boxclub. Quickly fascinated by this demanding sport he became a successful amateur fighter with a boxing record of 20 and 0.<br class="d-none d-md-block"><br class="d-none d-md-block">He wanted the best for himself from the many years in different gyms under various coaches and all the different sparring partners and will now start his coaching career in the summer of 2021.
+                            Joined the Boxclub Dübendorf in 2009 when his life as a boxer started in the small boxing room of the Boxclub. Quickly fascinated by this demanding sport he became a successful amateur fighter with a boxing record of 20 and 0.<br><br>He wanted the best for himself from the many years in different gyms under various coaches and all the different sparring partners and will now start his coaching career in the summer of 2021.
                         </p>
                     </div>
                 </div>
-                <div class="col-5 order-1">
+                <div class="col-12 col-lg-5 order-1">
                     <div class="teamPage__info">
-                        <div class="teamPage__image text-start">
+                        <div class="teamPage__image text-center text-lg-start">
                             <img src="img/box-img.jpg" alt="Team photo" class="teamPage__img">
-                            <p class="teamPage__position teamPage__position-second text-center">
+                            <p class="d-none d-md-inline-block teamPage__position text-center">
                                 Coach and Content Creator
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-7 order-1">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-7 order-2 order-lg-1">
                     <h3 class="teamPage__name">
                         Jan Leitz
                     </h3>
+                    <p class="d-md-none teamPage__position text-center">
+                        Vizepresident and Legal Counsel
+                    </p>
                     <p class="teamPage__desc">
                         Joined the Boxclub Dübendorf in 2011 and is Co-Founder of the ProFight Gym. He is vizepresident of both clubs and Legal Counsel of the ProFight Gym.
                     </p>
                 </div>
-                <div class="col-5 order-2">
-                    <div class="teamPage__image text-end">
+                <div class="col-12 col-lg-5 order-1 order-lg-2">
+                    <div class="teamPage__image text-center text-lg-end">
                         <img src="img/box-img.jpg" alt="Team photo" class="teamPage__img">
-                        <p class="teamPage__position text-center">
+                        <p class="d-none d-md-inline-block teamPage__position text-center">
                             Vizepresident and Legal Counsel
                         </p>
                     </div>
@@ -260,7 +273,7 @@
                     </h2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row d-none d-flex">
                 <div class="col-12">
                     <div class="times__group d-flex">
                         <p class="times__title-day times__week text-center">
@@ -278,7 +291,137 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <!-- For mobile -->
+            <div class="row d-md-none">
+                <div class="col-12">
+                    <div class="times__group d-flex flex-column flex-wrap justify-content-center">
+                        <p class="times__content-day times__week text-center">
+                            Monday
+                        </p>
+                        <p class="times__content-time times__desc times__desc-second text-center">
+                            <span>
+                                18:30 - 19:30
+                            </span>
+                            Boxing & strength/endurance
+                        </p>
+                        <p class="times__content-time times__desc times__desc-second text-center">
+                            <span>
+                                19:45 - 20:45
+                            </span>
+                            competition training
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="times__group d-flex flex-column flex-wrap justify-content-center">
+                        <p class="times__content-day times__week text-center">
+                            Tuesday
+                        </p>
+                        <p class="times__content-time times__desc times__desc-second text-center">
+                            <span>
+                                18:30 - 19:30
+                            </span>
+                            Boxing & strength/endurance
+                        </p>
+                        <p class="times__content-time times__desc times__desc-second text-center">
+                            <span>
+                                19:45 - 20:45
+                            </span>
+                            K1
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="times__group d-flex flex-column flex-wrap justify-content-center">
+                        <p class="times__content-day times__week text-center">
+                            Wednesday
+                        </p>
+                        <p class="times__content-time times__desc times__desc-second text-center times__kids">
+                            <span>
+                                17:30 - 18:15
+                            </span>
+                            Kids training
+                        </p>
+                        <p class="times__content-time times__desc times__desc-second text-center">
+                            <span>
+                                18:30 - 19:30
+                            </span>
+                            Boxing & strength/endurance
+                        </p>
+                        <p class="times__content-time times__desc times__desc-second text-center">
+                            <span>
+                                19:45 - 20:45
+                            </span>
+                            Boxing & strength/endurance
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="times__group d-flex flex-column flex-wrap justify-content-center">
+                        <p class="times__content-day times__week text-center">
+                            Thursday
+                        </p>
+                        <p class="times__content-time times__desc times__desc-second text-center times__kids">
+                            <span>
+                                18:30 - 19:30
+                            </span>
+                            Boxing & strength/endurance
+                        </p>
+                        <p class="times__content-time times__desc times__desc-second text-center">
+                            <span>
+                                19:45 - 20:45
+                            </span>
+                            K1
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="times__group d-flex flex-column flex-wrap justify-content-center">
+                        <p class="times__content-day times__week text-center">
+                            Friday
+                        </p>
+                        <p class="times__content-time times__desc times__desc-second text-center times__kids">
+                            <span>
+                                17:30 - 18:15
+                            </span>
+                            Kids training
+                        </p>
+                        <p class="times__content-time times__desc times__desc-second text-center">
+                            <span>
+                                18:30 - 19:30
+                            </span>
+                            Boxing & strength/endurance
+                        </p>
+                        <p class="times__content-time times__desc times__desc-second text-center">
+                            <span>
+                                19:45 - 20:45
+                            </span>
+                            Boxing & strength/endurance
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="times__group d-flex flex-column flex-wrap justify-content-center">
+                        <p class="times__content-day times__week text-center times__weekend times__content-weekend">
+                            Saturday
+                        </p>
+                        <p class="times__content-time times__desc times__desc-second text-center times__content-weekend">
+                            <span>
+                                10:00
+                            </span>
+                            Women Class
+                        </p>
+                        <p class="times__content-time times__desc times__desc-second text-center times__content-weekend">
+                            <span>
+                                11:00
+                            </span>
+                            strength/endurance
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- For table an desktop -->
+            <div class="row d-none d-md-flex">
                 <div class="col-12">
                     <div class="times__group d-flex">
                         <p class="times__content-day times__week text-center">
@@ -295,8 +438,6 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-12">
                     <div class="times__group d-flex">
                         <p class="times__content-day times__week text-center">
@@ -313,8 +454,6 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-12">
                     <div class="times__group d-flex">
                         <p class="times__content-day times__week text-center">
@@ -331,8 +470,6 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-12">
                     <div class="times__group d-flex">
                         <p class="times__content-day times__week text-center">
@@ -349,8 +486,6 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-12">
                     <div class="times__group d-flex">
                         <p class="times__content-day times__week text-center">
@@ -367,8 +502,6 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-12">
                     <div class="times__group d-flex">
                         <p class="times__content-day times__week text-center times__weekend times__content-weekend text-center">
@@ -442,7 +575,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 text-center text-md-start">
                     <button class="btn gallery__btn toPage" id="galleryPage">
                         More <img src="img/arrow.svg" alt="send" class="gallery__btn-img">
                     </button>
@@ -460,55 +593,55 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="galleryPage__item">
                         <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
                         <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="galleryPage__item">
                         <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
                         <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="galleryPage__item">
                         <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
                         <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="galleryPage__item">
                         <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
                         <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="galleryPage__item">
                         <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
                         <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="galleryPage__item">
                         <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
                         <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="galleryPage__item">
                         <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
                         <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="galleryPage__item">
                         <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
                         <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="galleryPage__item">
                         <img src="img/box-img.jpg" alt="Image" class="galleryPage__img">
                         <img src="img/zoom.svg" alt="Zoom" class="galleryPage__zoom imgOpen" data-img="img/box-img.jpg">
@@ -527,9 +660,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 d-flex">
+                <div class="col-12 d-flex flex-wrap flex-lg-nowrap justify-content-center justify-content-lg-start">
                     <div class="price__item price__item-one">
-                        <div class="price__block-top"></div>
+                        <div class="price__block-top d-none d-md-block"></div>
                         <h3 class="price__subtitle text-center">
                             Adults
                         </h3>
@@ -544,10 +677,10 @@
                                 chf
                             </p>
                         </div>
-                        <div class="price__block-bottom"></div>
+                        <div class="price__block-bottom d-none d-md-block"></div>
                     </div>
                     <div class="price__item price__item-two">
-                        <div class="price__block-top"></div>
+                        <div class="price__block-top d-none d-md-block"></div>
                         <h3 class="price__subtitle text-center">
                             Youngsters
                         </h3>
@@ -562,10 +695,10 @@
                                 chf
                             </p>
                         </div>
-                        <div class="price__block-bottom"></div>
+                        <div class="price__block-bottom d-none d-md-block"></div>
                     </div>
                     <div class="price__item price__item-three">
-                        <div class="price__block-top"></div>
+                        <div class="price__block-top d-none d-md-block"></div>
                         <h3 class="price__subtitle text-center">
                             Kids
                         </h3>
@@ -580,10 +713,10 @@
                                 chf
                             </p>
                         </div>
-                        <div class="price__block-bottom"></div>
+                        <div class="price__block-bottom d-none d-md-block"></div>
                     </div>
                     <div class="price__item price__item-four">
-                        <div class="price__block-top"></div>
+                        <div class="price__block-top d-none d-md-block"></div>
                         <h3 class="price__subtitle text-center">
                             OpenMat
                         </h3>
@@ -598,10 +731,10 @@
                                 chf
                             </p>
                         </div>
-                        <div class="price__block-bottom"></div>
+                        <div class="price__block-bottom d-none d-md-block"></div>
                     </div>
                     <div class="price__item price__item-five">
-                        <div class="price__block-top"></div>
+                        <div class="price__block-top d-none d-md-block"></div>
                         <h3 class="price__subtitle text-center">
                             Ten Card
                         </h3>
@@ -616,7 +749,7 @@
                                 chf
                             </p>
                         </div>
-                        <div class="price__block-bottom"></div>
+                        <div class="price__block-bottom d-none d-md-block"></div>
                     </div>
                 </div>
             </div>
@@ -625,17 +758,17 @@
     <footer class="footer" id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6 col-12">
                     <h2 class="sub__title footer__title">
                         Contact <span>Us</span>
                     </h2>
                 </div>
-                <div class="col-6 text-end">
+                <div class="col-6 text-end d-none d-md-block">
                     <img src="img/logom.png" alt="Logo" class="footer__logo">
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 col-12">
                     <form action="#" class="footer__form text-end">
                         <label for="email" class="footer__label">
                             <input name="email" type="text" class="footer__input" placeholder="Email" required><img src="img/email.svg" alt="email" class="footer__img-email">
@@ -647,12 +780,12 @@
                         </button>
                     </form>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-12">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.3935104249135!2d8.646242815924152!3d47.40426517917171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aa187685121c5%3A0xa8f981829c15528d!2zUMO8bnRlbiA0LCA4NjAyIFdhbmdlbi1CcsO8dHRpc2VsbGVuLCDQqNCy0LXQudGG0LDRgNGW0Y8!5e0!3m2!1suk!2sua!4v1635626781417!5m2!1suk!2sua" allowfullscreen="" loading="lazy" class="footer__maps"></iframe>
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 order-2 order-md-1 col-md-6 text-center text-md-start">
                     <p class="footer__text">
                         ProFight Gym
                     </p>
@@ -666,11 +799,13 @@
                         info@profightgym.ch
                     </a>
                 </div>
-                <div class="col-6 text-end">
-                    <p class="footer__text">
+                <div class="col-12 order-1 order-md-2 col-md-6 text-center text-md-end">
+                    <p class="footer__text footer__text-info">
                         There are parking spaces for visitors around the building.
                     </p>
-                    <div class="footer__social d-flex justify-content-end">
+                </div>
+                <div class="col-12 order-3 text-center text-md-end">
+                    <div class="footer__social d-flex justify-content-center justify-content-md-end">
                         <a href="#" class="footer__social-icon">
                             <img src="img/twitter.svg" alt="Twitter">
                         </a>
