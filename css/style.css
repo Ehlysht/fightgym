@@ -804,6 +804,10 @@ input::-webkit-inner-spin-button {
     }
     .times__content-day, .times__content-time{
         padding: 22px 0;
+        margin: 0 0 12px 0;
+    }
+    .times__desc, .times__desc span{
+        width: auto;
     }
     .times__weekend{
         background: #1D1D1D;
